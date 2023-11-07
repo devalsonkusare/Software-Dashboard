@@ -1,0 +1,24 @@
+<div class="top-navbar">
+    <div class="grid">
+        <div class="menu-icon">
+            <i class="pi pi-align-left f-2"></i>
+        </div>
+        <div class="align-items-center flex pl-7 col">
+            <span class="p-input-icon-left width">
+                <i class="pi pi-search"></i>
+                <input class="border-none" type="text" pInputText placeholder="Search" />
+            </span>
+        </div>
+        <div class="col align-items-center flex justify-content-end pr-7">
+            <p-dropdown appendTo="body" ngClass="top-nav-dropdown mr-4" [options]="languages"
+                optionLabel="name"></p-dropdown>
+            <i class="material-icons grey mr-6 f-2" id="msgicon" pBadge>comment</i>
+            <i class="pi pi-bell mr-6 f-2" id="bellicon" pBadge></i>
+            <div class="profile-img mr-3">
+                <img src="../../assets/images/profile-img.jpeg">
+            </div>
+            <span class="text-xl mr-1">Camille Stevenson</span>
+            <p-dropdown appendTo="body" ngClass="top-nav-dropdown"></p-dropdown>
+        </div>
+    </div>
+</div>

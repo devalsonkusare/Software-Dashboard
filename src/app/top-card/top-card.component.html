@@ -1,0 +1,16 @@
+<div class="flex">
+    <ng-container *ngFor="let key of topCardData;index as i">
+        <div class="t-card col">
+            <div class="flex align-items-center">
+                <div class="col-8 purple text-7xl">{{key.value}}%</div>
+                <div class="col-4 flex justify-content-center">
+                    <i class="grey" [class]="iconData[i].name"></i>
+                </div>
+            </div>
+            <div class="col-12 text-2xl	">
+                {{key.header}}
+            </div>
+            <span class="col-12 text-base">{{key.sub_header}}</span>
+        </div>
+    </ng-container>
+</div>

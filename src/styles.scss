@@ -1,1 +1,330 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+$bgcolor: #f4f7fc;
+$navbarColor: #fefefe;
+$purple: #4f6ce1;
+$lightpurple: #c0cdff;
+$grey: #767b86;
+$lightgrey: #9e9e9e;
+$lightgreen: #24d41e;
+$red: #e95369;
+$darkgrey: #7582a0;
+
+body,
+html {
+    background-color: $bgcolor;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.top-navbar {
+    background-color: $navbarColor;
+    overflow: hidden;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 0px;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.f-2 {
+    font-size: 2.2rem !important;
+}
+
+.menu-icon {
+    background-color: $purple;
+    color: white;
+    width: 105px;
+    height: 80px;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.p-input-icon-left>.p-inputtext {
+    padding-left: 3.5rem;
+}
+
+.grey {
+    color: $lightgrey;
+}
+
+.top-nav-dropdown {
+    .p-dropdown {
+        border: none;
+    }
+
+    .p-dropdown-label-empty {
+        display: none;
+    }
+}
+
+#bellicon {
+    .p-badge {
+        background: red;
+    }
+
+    color: $lightgrey;
+}
+
+#msgicon {
+    .p-badge {
+        background: $lightgreen;
+    }
+
+    padding-top: 4px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.left-navbar {
+    background-color: $navbarColor;
+    width: 97px;
+    height: 100%;
+    position: fixed;
+    top: 72px;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    z-index: 3;
+
+}
+
+.app-main-content {
+    margin-left: 97px;
+    margin-top: 4.5rem;
+    background-color: $bgcolor;
+    height: 100%;
+}
+
+.t-card {
+    width: 398px;
+    height: 192px;
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.t-card:not(:last-child) {
+    margin-right: 2.6rem;
+}
+
+.t-card:hover {
+    background-color: $purple;
+    color: white;
+
+    .purple {
+        color: white;
+    }
+
+    .grey {
+        color: white;
+    }
+}
+
+.card {
+    padding: 4rem 4.5rem 2rem 4.5rem;
+    height: 100%;
+}
+
+.purple {
+    color: $purple;
+}
+
+.left-navbar {
+    i:hover {
+        color: $purple;
+    }
+}
+
+.order-comp {
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.new-user {
+    margin-left: 2.5rem;
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.paid-status {
+    background-color: $lightgreen;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+}
+
+.pending-status {
+    background-color: $darkgrey;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+}
+
+.failed-status {
+    background-color: $red;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+}
+
+.newUserProfile {
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.p-avatar.p-avatar-circle {
+    overflow: visible;
+
+    .p-badge.p-badge-xl {
+        height: 13px;
+        min-width: 13px;
+        margin-top: 55px;
+        margin-right: 10px;
+    }
+}
+
+.active-badge {
+    .p-badge {
+        background: $lightgreen;
+    }
+}
+
+.inactive-badge {
+    .p-badge {
+        background: $purple;
+    }
+}
+
+.darkgrey {
+    color: $darkgrey;
+}
+
+.p-progressbar .p-progressbar-label {
+    color: transparent;
+}
+
+.p-progressbar {
+    height: 10px;
+    width: 10rem;
+}
+
+.p-button:hover {
+    background-color: $purple;
+    color: white;
+}
+
+.p-button {
+    color: #939393;
+    background-color: #c4c4c4;
+    border: #c4c4c4;
+}
+
+.red-progress {
+    .p-progressbar .p-progressbar-value {
+        background: $red;
+    }
+
+    span {
+        color: $red;
+        font-weight: bold;
+    }
+}
+
+.yellow-progress {
+    .p-progressbar .p-progressbar-value {
+        background: rgb(235, 235, 15);
+    }
+
+    span {
+        color: rgb(207 207 74);
+        font-weight: bold;
+    }
+}
+
+.grey-progress {
+    .p-progressbar .p-progressbar-value {
+        background: $grey;
+    }
+
+    span {
+        color: $grey;
+        font-weight: bold;
+    }
+}
+
+.purple-progress {
+    .p-progressbar .p-progressbar-value {
+        background: $purple;
+    }
+
+    span {
+        color: $purple;
+        font-weight: bold;
+    }
+}
+
+.green-progress {
+    .p-progressbar .p-progressbar-value {
+        background: $lightgreen;
+    }
+
+    span {
+        color: $lightgreen;
+        font-weight: bold;
+    }
+}
+
+.f-r {
+    float: right;
+}
+
+.bg-none {
+    .p-button {
+        background-color: transparent;
+    }
+
+    .p-button:hover {
+        background-color: $purple;
+    }
+}
+
+.fe-col-canvas {
+    height: 500px;
+    max-height: 420px;
+    max-width: 100%;
+}
+
+.order-table {
+    .p-datatable-table {}
+
+    .p-datatable-thead {
+        tr {
+            th {
+                background-color: white;
+            }
+        }
+    }
+}

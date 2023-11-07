@@ -1,0 +1,35 @@
+<div class="new-user">
+    <span class="text-2xl">
+        New User Registrations
+    </span>
+    <div class="spacer">
+    </div>
+    <p-table ngClass="userTable" [value]="newUser" [scrollable]="true" scrollHeight="320px">
+        <ng-template pTemplate="body" let-user let-rowIndex="rowIndex">
+            <tr>
+                <td class="text-center">
+                    <p-avatar [ngClass]="getActiveStatus(user.isActive)" pBadge [image]="userImg[rowIndex].src"
+                        size="xlarge" shape="circle"></p-avatar>
+                </td>
+                <td>
+                    <div>
+                        <span class="flex text-xl font-medium">{{ user.name }}</span>
+                        <span class="flex text-lg font-normal mt-2 darkgrey">{{user.country}}</span>
+                    </div>
+                </td>
+                <td class="p-0">
+                    <div class="flex align-items-center justify-content-start"
+                        [ngClass]="getProgressClass(user.progress)">
+                        <p-progressBar class="col-9" [value]="user.progress"></p-progressBar>
+                        <span class=" col-3" [ngClass]="getProgressClass(user.progress)">
+                            {{user.progress}} %
+                        </span>
+                    </div>
+                </td>
+                <td class="text-center">
+                    <p-button label="More"></p-button>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
